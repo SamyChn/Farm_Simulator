@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Farm Simulator 🚜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🌾 Gestion des Champs</h1>
+    <table id="fieldsTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nom</th>
+                <th>Culture</th>
+                <th>État</th>
+                <th>Dernière action</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="filters" style="margin-bottom: 10px;">
+        <label for="stateFilter">Filtrer par état :</label>
+        <select id="stateFilter" onchange="fetchFields()">
+            <option value="all">Tous</option>
+            <option value="vide">Vide</option>
+            <option value="semé">Semé</option>
+            <option value="récolté">Récolté</option>
+        </select>©
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
